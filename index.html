@@ -1,43 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-  <!--  <link rel="stylesheet" href="outlines.css"> подключение стилей css-->
-  </head>
-  <body> 
-    <header>
-        <h1>Стасенко Владислав-Pre Task JavaScript</h1>
-    </header>
-    <div>
-        <image src="assets/LevLjSYPQAw.jpg"  width="300" height="300">
 
+<head>
+  <script src="scripts/script.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="body">
+  <header class="header">
+    <h1 class="header-desc">Стасенко Владислав-Pre Task JavaScript</h1>
+  </header>
+
+  <div class="content-wrapper">
+
+    <div class="about-me-wrapper">
+      <image class="image" src="./assets/LevLjSYPQAw.jpg">
+
+      <p class="about-me">Стасенко Владислав Александрович,
+        опыт работы — 1 год 
+        ООО "ТЕЛ-ПИ"
+        Мастер-приемщик
+        Образование:     Среднее специальное	Гомельский государственный дорожно-строительный колледж
         
+        Навыки:	умение работать в команде,  ориентация на результат,  деловая коммуникация,  консультирование, базовые знания JavaScript,  работа на осях Linux.
+        Обо мне: в последние годы я проходил обучение без возможности работать.
+        
+        </p>
     </div>
-    <div>
-        <p> о себе позже</p>
+
+
+    <div class="table-wrapper">
+      <table class="it-knowledge-table">
+        <caption class="caption">Знания в области IT</caption>
+        <tr class="table-row">
+          <th class="table-cell">Языки программирования</th>
+          <th class="table-cell">Уровень знания</th>
+        </tr>
+        <tr class="table-row">
+          <td class="table-cell">С++</td>
+          <td class="table-cell">
+            Средний: хорошие теоретические знания, практические навыки</td>
+        </tr>
+        <tr class="table-row">
+            <td class="table-cell">JavaScript / HTML / CSS</td>
+            <td class="table-cell">
+              Средний: хорошие теоретические знания, практические навыки</td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-cell">Python</td>
+            <td class="table-cell">
+              Новичок: базовые теоретические знания</td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-cell">C#</td>
+            <td class="table-cell">
+              Новичок: базовые теоретические знания</td>
+          </tr>
+      </table>
     </div>
-<table border="1">
-        <caption>Знания в области IT</caption>
-        <tr><th>Языки программирования</th><th>Уровень знания</th></tr>
-        <tr><td>данные</td><td>данные</td></tr> <!-- ячейки таблицы-->
-</table>
-<div>
-    <table border="1">
-        <caption>Оконченные учереждения образования</caption>
-        <tr><th>Название учереждения образования</th><th>Год окончания</th></tr>
-        <tr><td>данные</td><td>данные</td></tr> <!-- ячейки таблицы-->
-</table>
-</div>
-<div>
-    <form>
-        <input type="button" value="Проверить">
-      </form>
-</div>
+
+    <div class="table-wrapper">
+      <table class="education-table">
+        <caption class="caption">Оконченные учереждения образования</caption>
+        <tr class="table-row">
+          <th class="table-cell">Название учереждения образования</th>
+          <th class="table-cell">Год окончания</th>
+        </tr>
+        <tr class="table-row">
+          <td class="table-cell"><a href="https://ggdst.gomel.by/">ГГДСК УО РИПО</a></td>
+          <td class="table-cell">2022</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="form-wrapper">
+        <form class="form">
+          <textarea class="comment" name="Comment" id="comment" cols="30" rows="10"></textarea>
+          
+          <input type="tel" class="phone-number" name="Phone Number">
+          <button class="check-btn">Провека</button>
+        </form>
+      </div>
+
+  <footer class="footer">
+    <a class="link" href="https://twitter.com/epam_belarus">
+      <image src="assets/TW epam.png" width="50" height="50">
+    </a>
+    <a class="link" href="https://www.facebook.com/EPAM.Belarus">
+      <image src="assets/FB epam.png" width="50" height="50">
+    </a>
+    <a class="link" href="https://vk.com/epam.belarus">
+      <image src="assets/VK epam.png" width="50" height="50">
+    </a>
+    <a class="link" href="https://www.instagram.com/epam.belarus/">
+      <image src="assets/INST epam.png" width="50" height="50">
+    </a>
+    <a class="link" href="https://t.me/epamlab">
+      <image src="assets/TG epam.png" width="50" height="50">
+    </a>
+  </footer>
+
 </body>
-<footer>
-    
-    <a href="https://twitter.com/epam_belarus"><image src="assets/TW epam.png" width="50" height="50"></a>
-    <a href="https://www.facebook.com/EPAM.Belarus"><image src="assets/FB epam.png" width="50" height="50"></a>
-    <a href="https://vk.com/epam.belarus"><image src="assets/VK epam.png" width="50" height="50"></a> 
-    <a href="https://www.instagram.com/epam.belarus/"><image src= "assets/INST epam.png" width="50" height="50"></a> 
-    <a href="https://t.me/epamlab"><image src= "assets/TG epam.png" width="50" height="50"></a>
-</footer>
+
+</html>

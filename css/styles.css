@@ -1,0 +1,66 @@
+.body {
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    height: 70px;
+  }
+  
+  .header-desc {
+    margin: 0;
+  }
+  
+  .content-wrapper {
+    margin: 50px 100px;
+  }
+  
+  .about-me-wrapper {
+    display: flex;
+  }
+  
+  .image {
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+  }
+  
+  .about-me {
+    font-size: 32px;
+  }
+  
+  /* Tables */
+  .table-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .it-knowledge-table, .education-table {
+    width: 60%;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  
+  .caption {
+    font-size: 20px;
+  }
+  
+  .table-row {
+    border: 0;
+  }
+  
+  .table-cell {
+    border: 1px solid black;
+    padding: 5px 10px;
+  }
+
+  .form-wrapper {
+      display: flex;
+      flex-direction: column;
+  }
