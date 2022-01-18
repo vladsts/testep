@@ -2,7 +2,6 @@
 <html lang="ru">
 
 <head>
-  <script src="scripts/script.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -76,10 +75,20 @@
 
     <div class="form-wrapper">
         <form class="form">
-          <textarea class="comment" name="Comment" id="comment" cols="50" rows="5"></textarea>
+          <label for="comment">Комментарий</label>
+          <div class="tooltip">
+            <textarea class="comment form-elem" data-hover="Hello, this is the tooltip" name="Comment" id="comment" cols="50" rows="5"></textarea>
+            <span class="tooltip-text">Комментарий</span>
+          </div>
           
-          <input type="tel" class="phone-number" name="Phone Number">
-          <button class="check-btn">Провека</button>
+          
+          <label for="phone-number">Номер телефона</label>
+          <input type="tel" pattern="^\+375\d{9}$" id="phone-number" class="phone-number" name="Phone Number">
+          <div class="valid-phone-number form-elem">Номер верный</div>
+          <div class="invalid-phone-number form-elem">Номер не верный</div>
+
+
+          <button class="check-btn form-elem" id="check-btn">Провека</button>
         </form>
       </div>
 
@@ -102,5 +111,6 @@
   </footer>
 
 </body>
+<script src="./scripts/script.js"></script>
 
 </html>

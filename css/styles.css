@@ -1,66 +1,109 @@
 .body {
-    background: rgb(238,174,202);
-    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  }
-  
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #fff;
-    height: 70px;
-  }
-  
-  .header-desc {
-    margin: 0;
-  }
-  
-  .content-wrapper {
-    margin: 50px 100px;
-  }
-  
-  .about-me-wrapper {
-    display: flex;
-  }
-  
-  .image {
-    width: 300px;
-    height: 300px;
-    margin-right: 30px;
-  }
-  
-  .about-me {
-    font-size: 32px;
-  }
-  
-  /* Tables */
-  .table-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  
-  .it-knowledge-table, .education-table {
-    width: 60%;
-    border-collapse: collapse;
-    border: 1px solid black;
-  }
-  
-  .caption {
-    font-size: 20px;
-  }
-  
-  .table-row {
-    border: 0;
-  }
-  
-  .table-cell {
-    border: 1px solid black;
-    padding: 5px 10px;
-  }
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
 
-  .form-wrapper {
-      display: flex;
-      flex-direction: column;
-  }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  height: 70px;
+}
+
+.header-desc {
+  margin: 0;
+}
+
+.content-wrapper {
+  margin: 50px 100px;
+}
+
+.about-me-wrapper {
+  display: flex;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  margin-right: 30px;
+}
+
+.about-me {
+  font-size: 32px;
+}
+
+/* Tables */
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.it-knowledge-table, .education-table {
+  width: 60%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.caption {
+  font-size: 20px;
+}
+
+.table-row {
+  border: 0;
+}
+
+.table-cell {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+.form-wrapper {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+display: flex;
+flex-direction: column;
+}
+
+.form-elem {
+margin: 0 0 10px 0;
+}
+
+.valid-phone-number, .invalid-phone-number {
+display: none;
+}
+
+.tooltip {
+position: relative;
+display: inline-block;
+}
+
+.tooltip-text {
+visibility: hidden;
+width: 120px;
+background-color: gray;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+
+position: absolute;
+z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+visibility: visible;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    }
